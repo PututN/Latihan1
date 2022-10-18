@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir isian</h1>
+    <form action="\daftar" method="post">
+        <button type="button">Tombol biasa</button>
+        <div>
+            <label for="name">Nama Lengkap</label>
+            <input type="text" placeholder="Nama" id="name" name="name">    
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email" name="email">    
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password">    
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="number" placeholder="Phone" id="phone" name="phone">     
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+    <hr>
+    <h1>Pesanan</h1>
+    <form action="/order">
+        <div>
+        <label for="">Baju</label>
+        <input type="radio" name="Baju" id="" value="Kemeja" checked><label for="">Kemeja</label>
+        <input type="radio" name="Baju" id="" value="Kaos"><label for="">Kaos</label>
+        </div>
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option>-</option>
+                <option value="s">Small</option>
+                <option value="m" selected>Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="term">have readed term & condition</label>
+            <input type="checkbox" name="term" id="yes" value="yes" checked>
+        </div>
+        <div>
+            <p>
+            <label for="note">Catatan</label>
+            </p>
+            <textarea name="note" id="note" cols="50" rows="5" placeholder="tuliskan note jika ada"></textarea>
+        </div>
+        <button type="submit">Order</button>
+    </form>
+    <hr>
+    <h1>Validasi</h1>
+    <form action="valid">
+        <label for="validasi">Validasi</label>
+        <input type="text" name="name" required minlength="3" maxlength="5" placeholder="Wajib diisi" >
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

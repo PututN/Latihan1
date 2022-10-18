@@ -1,0 +1,23 @@
+.logo {
+    border: 1px ridge #f00;
+    background-color: #ff0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.logo img {
+        width: auto;
+}
+.logo p {
+    font: small;
+    text-align:center ;
+}
+
+table, td {
+    border:1px solid #f00;
+}
+
+thead {
+    background-color: violet;
+    color: black;
+}
